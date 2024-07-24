@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Portafolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="images/logo.png" alt="" class="logoreal">
+        </div>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Mi Portafolio</h1>
+            <h3>Daniel Acevedo</h3>
+            <p>Bienvenido a mi sitio web personal</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mi</h2>
+            <p>Hola, soy Daniel Acevedo, tengo 17 años y soy estudiante del Colegio Técnico Profesional Arturo Matte Larrain. Desde pequeño he sentido una fuerte atracción por la tecnología y el mundo del desarrollo de software. Mi pasión por la programación me lleva a querer convertirme en un desarrollador full stack, ya que me apasiona tanto el diseño y la experiencia del usuario en el frontend, como la complejidad y la lógica del backend, que incluye bases de datos y servidores.
+
+                Estoy comprometido con mi formación en programación y siempre estoy en busca de nuevas oportunidades para aprender y crecer profesionalmente. Disfruto explorando diferentes lenguajes de programación y herramientas tecnológicas, buscando desafíos que me permitan aplicar y expandir mis habilidades.
+                
+                En el futuro, aspiro a trabajar en proyectos innovadores que me desafíen y me permitan contribuir al avance tecnológico. Estoy decidido a seguir aprendiendo y mejorando, aprovechando cada experiencia para acercarme más a mis metas profesionales en el campo de la programación.</p>
+
+            <h3>Intereses</h3>
+            <div class="text">Hola, soy Daniel Acevedo, un apasionado de las motos, el gimnasio, los videojuegos y la comida. Las motos me ofrecen libertad y emoción, mientras que el gimnasio fortalece mi cuerpo y mi mente, impulsándome a superar límites. Los videojuegos son mi escape favorito, donde disfruto explorando mundos virtuales y mejorando mis habilidades. Además, la comida es una pasión que me permite descubrir nuevos sabores y culturas a través de la cocina y las experiencias gastronómicas. Estos intereses definen quién soy y me inspiran a seguir explorando, aprendiendo y disfrutando cada día.</div>
+            <div class="interests">
+                <div class="interest" onmouseover="changeLogo('gym')">
+                    <img src="images/gym.jfif" alt="gym">
+                </div>
+                <div class="interest" onmouseover="changeLogo('moto')">
+                    <img src="images/youwu.jfif" alt="mato">
+                </div>
+                <div class="interest" onmouseover="changeLogo('juegos')">
+                    <img src="images/cod.webp" alt="juegos">
+                </div>
+                <div class="interest" onmouseover="changeLogo('comida')">
+                    <img src="images/comda.avif" alt="Comida">
+                </div>
+            </div>
+
+            <!-- Separador -->
+            <div class="separador-container2">
+                    <div class="separador2"></div>
+            </div>
+            <!-- Fin separador -->
+            <h3>Gustos Musicales</h3>
+            <div class="text">Mis gustos musicales son diversos y me conectan emocionalmente con artistas como Anuel, Jere Klein, Eladio Carrión y Beni Jr. Cada uno me fascina por su capacidad para contar historias a través de letras profundas y ritmos cautivadores. Anuel destaca por su estilo urbano y letras sinceras sobre la vida y el amor. Jere Klein mezcla géneros creando melodías innovadoras. Eladio Carrión aborda temas sociales y personales con profundidad. Beni Jr. fusiona ritmos latinos y contemporáneos, generando un sonido vibrante. Estos artistas no solo me entretienen, sino que también me inspiran a explorar nuevas emociones y expandir mis horizontes musicales.
+            </div>
+            <div class="interests">
+                <div class="interest" onmouseover="changeLogo('beni jr')">
+                    <img src="images/benijr.jfif" alt="beni jr">
+                </div>
+                <div class="interest" onmouseover="changeLogo('jere klein')">
+                    <img src="images/jere.jpg" alt="jere klein">
+                </div>
+                <div class="interest" onmouseover="changeLogo('eladio carrion')">
+                    <img src="images/eladio.jpg" alt="eladio carrion">
+                </div>
+                <div class="interest" onmouseover="changeLogo('anuel')">
+                    <img src="images/eldiodeltra.jfif" alt="anuel">
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 20%;">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form action="/enviar.php" method="post">
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre" required><br>
+          
+              <label for="email">Correo electronico:</label><br>
+              <input type="email" id="email" name="email" required><br>
+          
+              <label for="mensaje">Mensaje:</label><br>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+          
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+          <br>
+          <br>
+          <footer class="derecho">
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

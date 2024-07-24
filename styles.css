@@ -1,0 +1,222 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fd0000;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #dc143c 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+#about,
+#skills {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border: #dc143c 3px solid;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+/* Barras de progreso */
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.progress {
+    background-color: #dc143c;
+    width: 0;
+    padding: 3px;
+    text-align: right;
+    border-radius: 5px;
+    color: #ff0000;
+}
+
+/* Estilos para el footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both; /* Limpiar el flujo de elementos anteriores */
+}
+
+/* Añadir espacio después del último contenedor */
+#skills {
+    margin-bottom: 50px; /* Altura aproximada del footer */
+}
+
+/* Estilos para los intereses */
+.interests {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.interest {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.interest img {
+    max-width: 80%;
+    max-height: 80%;
+    transition: transform 0.3s ease;
+}
+
+.interest:hover {
+   background-color: #dc143c;
+ 
+}
+
+.interest:hover img {
+    transform: scale(1.2);
+}
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding-top: 20px;
+        min-height: 50px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    #about,
+    #skills {
+        padding: 10px;
+    }
+
+    .progress-bar {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para el menú desplegable en dispositivos móviles */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+
+.logoreal{
+    width: 100px;
+    height: 100px;
+}
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .separador-container2{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .separador2{
+        width: 80%;
+        height: 2px;
+        background-color: red;
+        margin: 0px 0;
+        opa 
+    }
